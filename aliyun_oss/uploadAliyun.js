@@ -4,6 +4,16 @@ const env = require('./config.js'); //配置文件，在这里配置你的OSS ke
 const Base64 = require('./Base64.js');//Base64,hmac,sha1,crypto相关算法
 //参考这里https://github.com/peterhuang007/weixinFileToaliyun.git
 
+
+let callback = {
+  "callbackUrl": env.callbackUrl,
+  "callbackBody": env.callbackBody
+}
+
+const callbackurl = Base64.encode(JSON.stringify(callback));
+
+
+
 require('./hmac.js');
 require('./sha1.js');
 const Crypto = require('./crypto.js');
@@ -45,6 +55,7 @@ const uploadFile = function (filePath, dir, successc, failc) {
     //   "callbackBody": "bucket=${bucket}&object=${object}&etag=${etag}&size=${size}&mimeType=${mimeType}&my_var=${x:my_var}"
     // },
     formData: {
+      'callback': callbackurl,
       'key': aliyunFileKey,
       'policy': policyBase64,
       'OSSAccessKeyId': accessid,
