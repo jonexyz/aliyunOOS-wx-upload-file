@@ -44,3 +44,11 @@
 
 
 应用服务器回调具体可以参考https://help.aliyun.com/document_detail/31989.html?spm=a2c4g.11186623.2.13.73a83681rmUW8l#reference_b3p_cyw_wdb
+
+---
+
+服务端签名后直传案例 https://help.aliyun.com/document_detail/31926.html?spm=a2c4g.11186623.6.642.602872c1JV1kcV
+
+Web端直传实践简介案例 https://help.aliyun.com/document_detail/31923.html?spm=a2c4g.11186623.6.640.1dcc4382zt0Wz7
+
+JavaScript客户端签名直传案例 https://help.aliyun.com/document_detail/31925.html?spm=a2c4g.11186623.6.641.12c66212CeFVMm 
