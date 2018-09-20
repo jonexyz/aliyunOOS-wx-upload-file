@@ -32,13 +32,16 @@ imageInfo.format 	图片格式，如jpg、png等
 
 注意:回调路由在正确回调之后返回值应为如下格式
 
-``<?php
+``
+<?php
+
     header("Content-Type: application/json");
     
     $data = array("Status"=>"Ok");
     
     echo json_encode($data);
-?>``
+?>
+``
 
 
 
