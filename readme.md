@@ -10,26 +10,36 @@
 
 callbackBody中可以设置的系统变量有，其中imageInfo针对于图片格式，如果为非图片格式都为空：
 
-- | :-: | -: 
 系统变量 	含义
+
 bucket 	bucket
+
 object 	object
+
 etag 	文件的etag，即返回给用户的etag字段
+
 size 	object大小，CompleteMultipartUpload时为整个object的大小
+
 mimeType 	资源类型，如jpeg图片的资源类型为image/jpeg
+
 imageInfo.height 	图片高度
+
 imageInfo.width 	图片宽度
+
 imageInfo.format 	图片格式，如jpg、png等
 
 
+
 注意:回调路由在正确回调之后返回值应为如下格式
-``
-<?php
+
+``<?php
     header("Content-Type: application/json");
+    
     $data = array("Status"=>"Ok");
+    
     echo json_encode($data);
-?>
+?>``
 
-``
 
-服务器回调具体可以参考https://help.aliyun.com/document_detail/31989.html?spm=a2c4g.11186623.2.13.73a83681rmUW8l#reference_b3p_cyw_wdb
+
+应用服务器回调具体可以参考https://help.aliyun.com/document_detail/31989.html?spm=a2c4g.11186623.2.13.73a83681rmUW8l#reference_b3p_cyw_wdb
