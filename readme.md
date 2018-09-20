@@ -6,7 +6,7 @@
 
 配置文件 aliyun_oss/config.php 文件
 
-配置文件中的 callbackBody 参数就是阿里云OSS返回给应用服务器的对应的具体信息
+> 配置文件中的 callbackBody 参数就是阿里云OSS返回给应用服务器的对应的具体信息
 
 > callbackBody中可以设置的系统变量有，其中imageInfo针对于图片格式，如果为非图片格式都为空：
 
