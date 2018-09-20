@@ -31,8 +31,7 @@ imageInfo.format 	图片格式，如jpg、png等
 
 
 注意:回调路由在正确回调之后返回值应为如下格式
-
-``
+```
 <?php
 
     header("Content-Type: application/json");
@@ -41,8 +40,7 @@ imageInfo.format 	图片格式，如jpg、png等
     
     echo json_encode($data);
 ?>
-``
-
+```
 
 
 应用服务器回调具体可以参考https://help.aliyun.com/document_detail/31989.html?spm=a2c4g.11186623.2.13.73a83681rmUW8l#reference_b3p_cyw_wdb
